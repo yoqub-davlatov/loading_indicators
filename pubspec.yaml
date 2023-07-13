@@ -1,7 +1,7 @@
 name: loading_indicators
-description: A new Flutter package project.
+description: A collection of animated loading indicators with flutter.
 version: 0.0.1
-homepage:
+homepage: https://github.com/yoqub-davlatov/loading_indicators.git
 
 environment:
   sdk: '>=3.0.2 <4.0.0'
