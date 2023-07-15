@@ -28,29 +28,46 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            "Demo",
-          ),
+      appBar: AppBar(
+        title: const Text(
+          "Demo",
         ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              ClockLoader(
-                frameColor: Colors.deepOrange,
-                minuteColor: Colors.blue,
-                hourColor: Colors.green,
-              ),
-              ClockLoader(
-                size: 80,
-                strokeWidth: 5,
-                frameColor: Colors.deepOrange,
-                minuteColor: Colors.blue,
-                hourColor: Colors.green,
-              ),
-            ],
-          ),
-        ));
+      ),
+      body: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            ClockLoader(
+              frameColor: Colors.deepOrange,
+              minuteColor: Colors.blue,
+              hourColor: Colors.green,
+            ),
+            ClockLoader(
+              size: 80,
+              strokeWidth: 5,
+              frameColor: Colors.deepOrange,
+              minuteColor: Colors.blue,
+              hourColor: Colors.green,
+              duration: Duration(milliseconds: 1500),
+            ),
+            ThreeIconsLoading(
+              icon: Icons.access_time_filled_sharp,
+              iconColor1: Colors.red,
+              iconColor2: Colors.black,
+              iconColor3: Colors.blue,
+              direction: Direction.up,
+            ),
+            ThreeIconsLoading(
+              size: 25,
+              icon: Icons.circle,
+              iconColor1: Colors.red,
+              iconColor2: Colors.yellow,
+              iconColor3: Colors.green,
+              duration: Duration(seconds: 1),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

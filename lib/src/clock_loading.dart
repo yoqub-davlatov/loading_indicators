@@ -5,15 +5,17 @@ class ClockLoader extends StatefulWidget {
   final Color frameColor;
   final Color minuteColor;
   final Color hourColor;
-  double? size;
-  double? strokeWidth;
-  ClockLoader({
+  final double size;
+  final double strokeWidth;
+  final Duration duration;
+  const ClockLoader({
     super.key,
-    this.size,
+    this.size = 50,
     required this.frameColor,
     required this.minuteColor,
     required this.hourColor,
-    this.strokeWidth,
+    this.strokeWidth = 3,
+    this.duration = const Duration(milliseconds: 2000),
   });
 
   @override
@@ -31,7 +33,7 @@ class _ClockLoaderState extends State<ClockLoader>
     super.initState();
     controller = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 3),
+      duration: widget.duration,
     );
 
     animation = _rotationTween.animate(controller)
@@ -74,8 +76,8 @@ class _ClockLoaderState extends State<ClockLoader>
             widget.strokeWidth,
           ),
           child: Container(
-            height: widget.size ?? 50,
-            width: widget.size ?? 50,
+            height: widget.size,
+            width: widget.size,
           ),
         );
       },
@@ -89,7 +91,7 @@ class ShapePainter extends CustomPainter {
   final Color frameColor;
   final Color minuteColor;
   final Color hourColor;
-  final double? strokeWidth;
+  final double strokeWidth;
   ShapePainter(
     this.angle,
     this.angle2,
@@ -103,20 +105,24 @@ class ShapePainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     var paint1 = Paint()
       ..color = frameColor
-      ..strokeWidth = strokeWidth ?? 3
+      ..strokeWidth = strokeWidth
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
     var paint2 = Paint()
       ..color = minuteColor
-      ..strokeWidth = strokeWidth ?? 3
+      ..strokeWidth = strokeWidth
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
     var paint3 = Paint()
       ..color = hourColor
-      ..strokeWidth = strokeWidth ?? 3
+      ..strokeWidth = strokeWidth
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
-
+    var paint4 = Paint()
+      ..color = Colors.black
+      ..strokeWidth = strokeWidth
+      ..style = PaintingStyle.stroke
+      ..strokeCap = StrokeCap.round;
     double radius = size.height * 0.4;
     double radius2 = size.height * 0.2;
     Offset startingPoint = Offset(size.width / 2, size.height / 2);
@@ -130,9 +136,26 @@ class ShapePainter extends CustomPainter {
     );
     Offset center = Offset(size.width / 2, size.height / 2);
 
-    canvas.drawCircle(center, size.height / 2, paint1);
-    canvas.drawLine(startingPoint, endingPoint2, paint2);
-    canvas.drawLine(startingPoint, endingPoint, paint3);
+    canvas.drawCircle(
+      center,
+      size.height / 2,
+      paint1,
+    );
+    canvas.drawLine(
+      startingPoint,
+      endingPoint2,
+      paint2,
+    );
+    canvas.drawLine(
+      startingPoint,
+      endingPoint,
+      paint3,
+    );
+    canvas.drawLine(
+      startingPoint,
+      startingPoint,
+      paint4,
+    );
   }
 
   @override
