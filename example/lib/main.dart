@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loading_indicators/loading_indicators.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,16 +28,29 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          "Demo",
+        appBar: AppBar(
+          title: const Text(
+            "Demo",
+          ),
         ),
-      ),
-      body: const Center(
-        child: Text(
-          "Demo Page",
-        ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ClockLoader(
+                frameColor: Colors.deepOrange,
+                minuteColor: Colors.blue,
+                hourColor: Colors.green,
+              ),
+              ClockLoader(
+                size: 80,
+                strokeWidth: 5,
+                frameColor: Colors.deepOrange,
+                minuteColor: Colors.blue,
+                hourColor: Colors.green,
+              ),
+            ],
+          ),
+        ));
   }
 }

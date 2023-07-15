@@ -1,3 +1,3 @@
 library loading_indicators;
 
-export 'package:loading_indicators/loading_indicators.dart';
+export 'package:loading_indicators/src/clock_loading.dart';
