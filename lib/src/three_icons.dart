@@ -78,7 +78,7 @@ class _ThreeIconsLoadingState extends State<ThreeIconsLoading>
                     animation1.value <= 0.5
                         ? animation1.value
                         : 1 - animation1.value) *
-                coef,
+                coef,  
             child: mainIcon(widget.iconColor1),
           ),
           Transform.translate(
