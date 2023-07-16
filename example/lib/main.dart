@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loading_indicators/loading_indicators.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,10 +34,53 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       body: const Center(
-        child: Text(
-          "Demo Page",
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            ClockLoader(
+              frameColor: Colors.deepOrange,
+              minuteColor: Colors.blue,
+              hourColor: Colors.green,
+            ),
+            ClockLoader(
+              size: 80,
+              strokeWidth: 5,
+              frameColor: Colors.deepOrange,
+              minuteColor: Colors.blue,
+              hourColor: Colors.green,
+              duration: Duration(milliseconds: 1500),
+            ),
+            ThreeIconsLoading(
+              icon: Icons.access_time_filled_sharp,
+              iconColor1: Colors.red,
+              iconColor2: Colors.black,
+              iconColor3: Colors.blue,
+              direction: Direction.up,
+            ),
+            ThreeIconsLoading(
+              size: 25,
+              icon: Icons.circle,
+              iconColor1: Colors.red,
+              iconColor2: Colors.yellow,
+              iconColor3: Colors.green,
+              duration: Duration(seconds: 1),
+            ),
+            FlipIcons(
+              icon: Icons.camera,
+              first: Colors.red,
+              second: Colors.blue,
+            ),
+            FlipIcons(
+              icon: Icons.home_outlined,
+              icon2: Icons.home,
+              first: Colors.green,
+              second: Colors.amber,
+              duration: Duration(seconds: 2),
+              size: 50,
+            ),
+          ],
         ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }
