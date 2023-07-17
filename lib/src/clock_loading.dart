@@ -75,7 +75,7 @@ class _ClockLoaderState extends State<ClockLoader>
             widget.hourColor,
             widget.strokeWidth,
           ),
-          child: Container(
+          child: SizedBox(
             height: widget.size,
             width: widget.size,
           ),
@@ -120,7 +120,7 @@ class ShapePainter extends CustomPainter {
       ..strokeCap = StrokeCap.round;
     var paint4 = Paint()
       ..color = Colors.black
-      ..strokeWidth = strokeWidth
+      ..strokeWidth = strokeWidth * 1.5
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
     double radius = size.height * 0.4;
