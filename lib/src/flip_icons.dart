@@ -63,7 +63,7 @@ class _FlipIconsState extends State<FlipIcons> with TickerProviderStateMixin {
               transform: transformX,
               alignment: Alignment.center,
               child: CustomPaint(
-                painter: Arc1Painter(
+                painter: ArcPainter(
                   (angle <= angle270 && angle >= angle90)
                       ? widget.second
                       : widget.first,
@@ -95,10 +95,10 @@ class _FlipIconsState extends State<FlipIcons> with TickerProviderStateMixin {
   }
 }
 
-class Arc1Painter extends CustomPainter {
+class ArcPainter extends CustomPainter {
   final Color color;
   final double _size;
-  Arc1Painter(this.color, this._size);
+  ArcPainter(this.color, this._size);
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -110,13 +110,13 @@ class Arc1Painter extends CustomPainter {
 
     Rect rect = Rect.fromLTWH(0.0, 0.0, size.width, size.height);
     const delta = math.pi / 10;
-    const _90 = math.pi / 2;
-    const _180 = _90 * 2;
-    const _270 = _90 * 3;
-    canvas.drawArc(rect, 0 + delta, _90 - delta, false, paint);
-    canvas.drawArc(rect, _90 + delta, _90 - delta, false, paint);
-    canvas.drawArc(rect, _180 + delta, _90 - delta, false, paint);
-    canvas.drawArc(rect, _270 + delta, _90 - delta, false, paint);
+    const angle90 = math.pi / 2;
+    const angle180 = angle90 * 2;
+    const angle270 = angle90 * 3;
+    canvas.drawArc(rect, 0 + delta, angle90 - delta, false, paint);
+    canvas.drawArc(rect, angle90 + delta, angle90 - delta, false, paint);
+    canvas.drawArc(rect, angle180 + delta, angle90 - delta, false, paint);
+    canvas.drawArc(rect, angle270 + delta, angle90 - delta, false, paint);
   }
 
   @override
