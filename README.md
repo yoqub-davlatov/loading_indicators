@@ -1,39 +1,59 @@
+# 🏆 Flutter Loading Indicators
 <!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
+[![Format, Analyze and Test](https://github.com/jogboms/flutter_spinkit/actions/workflows/main.yml/badge.svg)](https://github.com/jogboms/flutter_spinkit/actions/workflows/main.yml) [![codecov](https://codecov.io/gh/jogboms/flutter_spinkit/branch/master/graph/badge.svg)](https://codecov.io/gh/jogboms/flutter_spinkit) [![pub package](https://img.shields.io/pub/v/flutter_spinkit.svg)](https://pub.dartlang.org/packages/flutter_spinkit)
 -->
+A collection of animated loading indicators with flutter.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## ✔️ Installing
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+```yaml
+dependencies:
+  loading_indicators: ^0.0.1
 ```
 
-## Additional information
+## ➕: Import
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+import 'package:loading_indicators/loading_indicators.dart';
+```
+
+## 💻: How To Use
+
+```dart
+const clockLoader = ClockLoader(
+  frameColor: Colors.deepOrange,
+  minuteColor: Colors.blue,
+  hourColor: Colors.green,
+),
+```
+
+```dart
+const threeDots = ThreeIconsLoading(
+  size: 25,
+  icon: Icons.circle,
+  iconColor1: Colors.red,
+  iconColor2: Colors.yellow,
+  iconColor3: Colors.green,
+  duration: Duration(seconds: 1),
+),
+```
+
+For more usecase info, please, refer to the `main.dart` in the example folder.
+
+ <!-- 
+ ## 🚀 Showcase
+-->
+
+## 🆘 Requests
+
+If you have faced with any issues or you have any recommendations, please fork the project and send a pull request with your comments.
+
+### ❗️ Note
+
+For help getting started with Flutter, view the online
+[documentation](https://flutter.io/).
+
+For help on editing plugin code, view the [documentation](https://flutter.io/platform-plugins/#edit-code).
+## 📰 License
+
+[MIT License](https://flutter.io/](https://github.com/yoqub-davlatov/loading_indicators/blob/main/LICENSE)https://github.com/yoqub-davlatov/loading_indicators/blob/main/LICENSE).
