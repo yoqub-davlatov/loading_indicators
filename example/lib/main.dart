@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:loading_indicators/loading_indicators.dart';
+import 'package:animated_loading_indicators/loading_indicators.dart';
 
 void main() {
   runApp(const MyApp());

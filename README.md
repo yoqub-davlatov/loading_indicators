@@ -8,13 +8,13 @@ A collection of animated loading indicators with flutter.
 
 ```yaml
 dependencies:
-  loading_indicators: ^0.0.1
+  animated_loading_indicators: ^0.0.1
 ```
 
 ## ➕: Import
 
 ```dart
-import 'package:loading_indicators/loading_indicators.dart';
+import 'package:animated_loading_indicators/loading_indicators.dart';
 ```
 
 ## 💻: How To Use
