@@ -11,13 +11,13 @@ dependencies:
   animated_loading_indicators: ^0.0.1
 ```
 
-## ➕: Import
+## ➕ Import
 
 ```dart
 import 'package:animated_loading_indicators/loading_indicators.dart';
 ```
 
-## 💻: How To Use
+## 💻 How To Use
 
 ```dart
 const clockLoader = ClockLoader(
