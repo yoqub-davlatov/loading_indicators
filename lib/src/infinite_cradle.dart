@@ -5,11 +5,12 @@ class InfiniteCradle extends StatefulWidget {
   final double size;
   final Color color;
   final Duration duration;
-  const InfiniteCradle(
-      {super.key,
-      this.size = 30,
-      this.color = Colors.black,
-      this.duration = const Duration(milliseconds: 1200)});
+  const InfiniteCradle({
+    super.key,
+    this.size = 30,
+    this.color = Colors.black,
+    this.duration = const Duration(milliseconds: 1200),
+  });
 
   @override
   State<InfiniteCradle> createState() => _InfiniteCradleState();
