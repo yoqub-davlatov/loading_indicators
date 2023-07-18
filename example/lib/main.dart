@@ -58,14 +58,14 @@ class _MyHomePageState extends State<MyHomePage> {
               hourColor: Colors.green,
               duration: Duration(milliseconds: 1500),
             ),
-            ThreeIconsLoading(
+            ThreeIcons(
               icon: Icons.access_time_filled_sharp,
               iconColor1: Colors.red,
               iconColor2: Colors.black,
               iconColor3: Colors.blue,
               direction: Direction.up,
             ),
-            ThreeIconsLoading(
+            ThreeIcons(
               size: 25,
               icon: Icons.circle,
               iconColor1: Colors.red,

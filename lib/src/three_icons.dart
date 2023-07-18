@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 enum Direction { up, down }
 
-class ThreeIconsLoading extends StatefulWidget {
+class ThreeIcons extends StatefulWidget {
   final Color iconColor1;
   final Color iconColor2;
   final Color iconColor3;
@@ -10,7 +10,7 @@ class ThreeIconsLoading extends StatefulWidget {
   final Duration duration;
   final double size;
   final Direction direction;
-  const ThreeIconsLoading({
+  const ThreeIcons({
     super.key,
     required this.icon,
     required this.iconColor1,
@@ -21,10 +21,10 @@ class ThreeIconsLoading extends StatefulWidget {
     this.direction = Direction.down,
   });
   @override
-  State<ThreeIconsLoading> createState() => _ThreeIconsLoadingState();
+  State<ThreeIcons> createState() => _ThreeIconsState();
 }
 
-class _ThreeIconsLoadingState extends State<ThreeIconsLoading>
+class _ThreeIconsState extends State<ThreeIcons>
     with TickerProviderStateMixin {
   late Animation<double> animation1;
   late Animation<double> animation2;
