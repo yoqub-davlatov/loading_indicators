@@ -24,7 +24,7 @@ const clockLoader = ClockLoader(
   frameColor: Colors.deepOrange,
   minuteColor: Colors.blue,
   hourColor: Colors.green,
-),
+);
 ```
 
 ```dart
@@ -35,14 +35,22 @@ const threeDots = ThreeIconsLoading(
   iconColor2: Colors.yellow,
   iconColor3: Colors.green,
   duration: Duration(seconds: 1),
-),
+);
 ```
 
 For more usecase info, please, refer to the `main.dart` in the example folder.
 
- <!-- 
- ## 🚀 Showcase
--->
+ 
+ ## 🍰 Demo
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/infinite_cradle.gif" width="100px" height="100px">
+      <br />
+      InfiniteCradle
+    </td>
+  </tr>
+</table>
 
 ## 🆘 Requests
 
