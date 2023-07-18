@@ -49,6 +49,16 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
       <br />
       InfiniteCradle
     </td>
+    <td align="center">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/clock_loader.gif" width="100px" height="100px">
+      <br />
+      ClockLoader
+    </td>
+    <td align="center">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/three_icons.gif" width="100px" height="100px">
+      <br />
+      ThreeIcons
+    </td>
   </tr>
 </table>
 
