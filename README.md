@@ -59,6 +59,11 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
       <br />
       ThreeIcons
     </td>
+    <td align="center">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/flip_icons.gif" width="100px" height="100px">
+      <br />
+      FlipIcons
+    </td>
   </tr>
 </table>
 
