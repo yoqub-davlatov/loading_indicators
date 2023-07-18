@@ -37,6 +37,14 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
+            InfiniteCradle(
+              size: 20,
+            ),
+            InfiniteCradle(
+              size: 50,
+              color: Colors.red,
+              duration: Duration(seconds: 1),
+            ),
             ClockLoader(
               frameColor: Colors.deepOrange,
               minuteColor: Colors.blue,
