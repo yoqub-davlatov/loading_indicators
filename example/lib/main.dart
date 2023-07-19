@@ -34,57 +34,86 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       body: const Center(
-        child: Column(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            InfiniteCradle(
-              size: 20,
-            ),
-            InfiniteCradle(
-              size: 50,
-              color: Colors.red,
-              duration: Duration(seconds: 1),
-            ),
-            ClockLoader(
-              frameColor: Colors.deepOrange,
-              minuteColor: Colors.blue,
-              hourColor: Colors.green,
-            ),
-            ClockLoader(
-              size: 80,
-              strokeWidth: 5,
-              frameColor: Colors.deepOrange,
-              minuteColor: Colors.blue,
-              hourColor: Colors.green,
-              duration: Duration(milliseconds: 1500),
-            ),
-            ThreeIcons(
-              icon: Icons.access_time_filled_sharp,
-              iconColor1: Colors.red,
-              iconColor2: Colors.black,
-              iconColor3: Colors.blue,
-              direction: Direction.up,
-            ),
-            ThreeIcons(
-              size: 25,
-              icon: Icons.circle,
-              iconColor1: Colors.red,
-              iconColor2: Colors.yellow,
-              iconColor3: Colors.green,
-              duration: Duration(seconds: 1),
-            ),
-            FlipIcons(
-              icon: Icons.camera,
-              first: Colors.red,
-              second: Colors.blue,
-            ),
-            FlipIcons(
-              icon: Icons.home_outlined,
-              icon2: Icons.home,
-              first: Colors.green,
-              second: Colors.amber,
-              duration: Duration(seconds: 2),
-              size: 50,
+            Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              InfiniteCradle(
+                size: 20,
+              ),
+              InfiniteCradle(
+                size: 50,
+                color: Colors.red,
+                duration: Duration(seconds: 1),
+              ),
+              ClockLoader(
+                frameColor: Colors.deepOrange,
+                minuteColor: Colors.blue,
+                hourColor: Colors.green,
+              ),
+              ClockLoader(
+                size: 80,
+                strokeWidth: 5,
+                frameColor: Colors.deepOrange,
+                minuteColor: Colors.blue,
+                hourColor: Colors.green,
+                duration: Duration(milliseconds: 1500),
+              ),
+              ThreeIcons(
+                icon: Icons.access_time_filled_sharp,
+                iconColor1: Colors.red,
+                iconColor2: Colors.black,
+                iconColor3: Colors.blue,
+                direction: Direction.up,
+              ),
+              ThreeIcons(
+                size: 25,
+                icon: Icons.circle,
+                iconColor1: Colors.red,
+                iconColor2: Colors.yellow,
+                iconColor3: Colors.green,
+                duration: Duration(seconds: 1),
+              ),
+              FlipIcons(
+                icon: Icons.camera,
+                first: Colors.red,
+                second: Colors.blue,
+              ),
+              FlipIcons(
+                icon: Icons.home_outlined,
+                icon2: Icons.home,
+                first: Colors.green,
+                second: Colors.amber,
+                duration: Duration(seconds: 2),
+                size: 50,
+              ),
+            ]),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                PacmanLoader(),
+                PacmanLoader(
+                  size: 40,
+                  duration: Duration(milliseconds: 450),
+                  mainColor: Colors.red,
+                  borderColor: Colors.transparent,
+                  eyeColor: Colors.white,
+                  isStatic: true,
+                ),
+                TextLoader(),
+                TextLoader(
+                  size: 45,
+                  mainColor: Colors.redAccent,
+                  secondaryColor: Colors.greenAccent,
+                  duration: Duration(milliseconds: 600),
+                ),
+                YingYangLoader(),
+                YingYangLoader(
+                  size: 70,
+                  firstColor: Colors.cyan,
+                  duration: Duration(seconds: 3),
+                ),
+              ],
             ),
           ],
         ),
