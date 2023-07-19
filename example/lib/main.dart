@@ -34,23 +34,26 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       body: const Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
               InfiniteCradle(
                 size: 20,
               ),
+              Divider(),
               InfiniteCradle(
                 size: 50,
                 color: Colors.red,
                 duration: Duration(seconds: 1),
               ),
+              Divider(),
               ClockLoader(
                 frameColor: Colors.deepOrange,
                 minuteColor: Colors.blue,
                 hourColor: Colors.green,
               ),
+              Divider(),
               ClockLoader(
                 size: 80,
                 strokeWidth: 5,
@@ -59,6 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 hourColor: Colors.green,
                 duration: Duration(milliseconds: 1500),
               ),
+              Divider(),
               ThreeIcons(
                 icon: Icons.access_time_filled_sharp,
                 iconColor1: Colors.red,
@@ -66,6 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 iconColor3: Colors.blue,
                 direction: Direction.up,
               ),
+              Divider(),
               ThreeIcons(
                 size: 25,
                 icon: Icons.circle,
@@ -74,11 +79,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 iconColor3: Colors.green,
                 duration: Duration(seconds: 1),
               ),
+              Divider(),
               FlipIcons(
                 icon: Icons.camera,
                 first: Colors.red,
                 second: Colors.blue,
               ),
+              Divider(),
               FlipIcons(
                 icon: Icons.home_outlined,
                 icon2: Icons.home,
@@ -87,35 +94,39 @@ class _MyHomePageState extends State<MyHomePage> {
                 duration: Duration(seconds: 2),
                 size: 50,
               ),
-            ]),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                PacmanLoader(),
-                PacmanLoader(
-                  size: 40,
-                  duration: Duration(milliseconds: 450),
-                  mainColor: Colors.red,
-                  borderColor: Colors.transparent,
-                  eyeColor: Colors.white,
-                  isStatic: true,
-                ),
-                TextLoader(),
-                TextLoader(
-                  size: 45,
-                  mainColor: Colors.redAccent,
-                  secondaryColor: Colors.greenAccent,
-                  duration: Duration(milliseconds: 600),
-                ),
-                YingYangLoader(),
-                YingYangLoader(
-                  size: 70,
-                  firstColor: Colors.cyan,
-                  duration: Duration(seconds: 3),
-                ),
-              ],
-            ),
-          ],
+              Divider(),
+              PacmanLoader(),
+              Divider(),
+              PacmanLoader(
+                size: 40,
+                duration: Duration(milliseconds: 450),
+                mainColor: Colors.red,
+                borderColor: Colors.transparent,
+                eyeColor: Colors.white,
+                isStatic: true,
+              ),
+              Divider(),
+              TextLoader(),
+              Divider(),
+              TextLoader(
+                size: 45,
+                mainColor: Colors.redAccent,
+                secondaryColor: Colors.greenAccent,
+                duration: Duration(milliseconds: 600),
+              ),
+              Divider(),
+              YingYangLoader(),
+              Divider(),
+              YingYangLoader(
+                size: 70,
+                firstColor: Colors.cyan,
+                duration: Duration(seconds: 3),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+            ],
+          ),
         ),
       ),
     );

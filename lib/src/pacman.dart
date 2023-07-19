@@ -72,8 +72,8 @@ class _PacmanLoaderState extends State<PacmanLoader>
         widget.isStatic,
       ),
       child: SizedBox(
-        height: widget.size,
-        width: widget.size,
+        height: 2 * widget.size,
+        width: 2 * widget.size,
       ),
     );
   }

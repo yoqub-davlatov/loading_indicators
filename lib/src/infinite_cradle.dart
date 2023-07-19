@@ -52,7 +52,7 @@ class _InfiniteCradleState extends State<InfiniteCradle>
       builder: (context, child) {
         return SizedBox(
           width: widget.size,
-          height: widget.size,
+          height: 1.4 * widget.size,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.end,
