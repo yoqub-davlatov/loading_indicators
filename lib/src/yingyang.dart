@@ -62,8 +62,8 @@ class _YingYangState extends State<YingYangLoader>
           widget.secondColor,
         ),
         child: SizedBox(
-          width: widget.size,
-          height: widget.size,
+          width: 2 * widget.size,
+          height: 2 * widget.size,
         ),
       ),
     );
