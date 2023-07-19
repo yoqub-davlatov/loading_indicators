@@ -122,6 +122,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 firstColor: Colors.cyan,
                 duration: Duration(seconds: 3),
               ),
+              Divider(),
+              CircleAnimation(),
+              Divider(),
+              CircleAnimation(
+                size: 45,
+                color: Colors.black,
+                duration: Duration(milliseconds: 25),
+                circleRadius: 100,
+              ),
               SizedBox(
                 height: 20,
               ),
