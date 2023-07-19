@@ -14,7 +14,7 @@ dependencies:
 ## ➕ Import
 
 ```dart
-import 'package:animated_loading_indicators/loading_indicators.dart';
+import 'package:animated_loading_indicators/animated_loading_indicators.dart';
 ```
 
 ## 💻 How To Use
