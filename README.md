@@ -64,6 +64,21 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
       <br />
       FlipIcons
     </td>
+    <td align="center">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/pacman.gif" width="100px" height="100px">
+      <br />
+      Pacman
+    </td>
+    <td align="center">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/yingyang.gif" width="100px" height="100px">
+      <br />
+      YingYang
+    </td>
+    <td align="center">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/text_loader.gif" width="100px" height="21px">
+      <br />
+      TextLoader
+    </td>
   </tr>
 </table>
 
