@@ -20,20 +20,20 @@ import 'package:animated_loading_indicators/loading_indicators.dart';
 ## 💻 How To Use
 
 ```dart
-const clockLoader = ClockLoader(
-  frameColor: Colors.deepOrange,
-  minuteColor: Colors.blue,
-  hourColor: Colors.green,
-);
+const pacmanLoader =PacmanLoader(
+  size: 40,
+  duration: Duration(milliseconds: 450),
+  mainColor: Colors.red,
+  borderColor: Colors.transparent,
+  eyeColor: Colors.white,
+  isStatic: true,
+);  
 ```
 
 ```dart
-const threeDots = ThreeIconsLoading(
-  size: 25,
-  icon: Icons.circle,
-  iconColor1: Colors.red,
-  iconColor2: Colors.yellow,
-  iconColor3: Colors.green,
+const infiniteCradle = InfiniteCradle(
+  size: 50,
+  color: Colors.red,
   duration: Duration(seconds: 1),
 );
 ```
@@ -97,3 +97,9 @@ For help on editing plugin code, view the [documentation](https://flutter.io/pla
 ## 📰 License
 
 [MIT License](https://flutter.io/](https://github.com/yoqub-davlatov/loading_indicators/blob/main/LICENSE)https://github.com/yoqub-davlatov/loading_indicators/blob/main/LICENSE).
+
+## ✍️ Authors
+- Azizullo Sadriddinzoda (a.sadriddinzoda@innopolis.university)
+- Anushervon Qodirzoda (a.qodirzoda@innopolis.university)
+- Habibullo Assoev (h.assoev@innopolis.university)
+- Yoqub Davlatov (y.davlatov@innopolis.university)
