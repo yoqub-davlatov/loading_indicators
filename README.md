@@ -1,8 +1,8 @@
-# 🏆 Flutter Loading Indicators
-<!--
-[![Format, Analyze and Test](https://github.com/jogboms/flutter_spinkit/actions/workflows/main.yml/badge.svg)](https://github.com/jogboms/flutter_spinkit/actions/workflows/main.yml) [![codecov](https://codecov.io/gh/jogboms/flutter_spinkit/branch/master/graph/badge.svg)](https://codecov.io/gh/jogboms/flutter_spinkit) [![pub package](https://img.shields.io/pub/v/flutter_spinkit.svg)](https://pub.dartlang.org/packages/flutter_spinkit)
--->
-A collection of animated loading indicators with flutter.
+# 🏆 Animated Loading Indicators
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/yoqub-davlatov/loading_indicators/blob/main/LICENSE)
+
+A collection of animated loading indicators.
 
 ## ✔️ Installing
 
@@ -20,7 +20,7 @@ import 'package:animated_loading_indicators/animated_loading_indicators.dart';
 ## 💻 How To Use
 
 ```dart
-const pacmanLoader =PacmanLoader(
+const pacmanLoader = PacmanLoader(
   size: 40,
   duration: Duration(milliseconds: 450),
   mainColor: Colors.red,
@@ -96,7 +96,7 @@ For help getting started with Flutter, view the online
 For help on editing plugin code, view the [documentation](https://flutter.io/platform-plugins/#edit-code).
 ## 📰 License
 
-[MIT License](https://flutter.io/](https://github.com/yoqub-davlatov/loading_indicators/blob/main/LICENSE)https://github.com/yoqub-davlatov/loading_indicators/blob/main/LICENSE).
+[MIT License](https://github.com/yoqub-davlatov/loading_indicators/blob/main/LICENSE).
 
 ## ✍️ Authors
 - Azizullo Sadriddinzoda (a.sadriddinzoda@innopolis.university)
