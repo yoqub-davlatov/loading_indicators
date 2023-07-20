@@ -143,7 +143,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 bottomLoading: null,
                 isLineLoading: true, // Set the loading state as needed
                 child: SizedBox(),
-              )
+              ), 
+               Divider() , 
+               SizedBox(height: 20), 
+              EyeMoving(timer: Duration(seconds: 6)), 
             ],
           ),
         ),
