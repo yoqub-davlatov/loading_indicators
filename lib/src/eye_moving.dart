@@ -6,6 +6,9 @@ class EyeMoving extends StatefulWidget {
   final Duration timer;
   final Color colorIcon;
   final bool increasing;
+  final double height;
+  final double width;
+  final double boarderSize; 
 
   const EyeMoving({
     Key? key,
@@ -14,6 +17,9 @@ class EyeMoving extends StatefulWidget {
     this.iconSize = 35,
     required this.timer,
     this.increasing = true,
+    this.height = 150,
+    this.width = 150,
+    this.boarderSize = 200 , 
   }) : super(key: key);
 
   @override
@@ -62,12 +68,12 @@ class _EyeMovingState extends State<EyeMoving>
   Widget build(BuildContext context) {
     return Center(
       child: SizedBox(
-        height: 150,
-        width: 150,
+        height: widget.height,
+        width: widget.width,
         child: Container(
           decoration: BoxDecoration(
             color: Colors.red,
-            borderRadius: BorderRadius.circular(200.0),
+            borderRadius: BorderRadius.circular(widget.boarderSize),
           ),
           child: Transform.rotate(
             angle: rotationAngle,
