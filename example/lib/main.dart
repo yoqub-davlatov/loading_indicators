@@ -125,6 +125,25 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(
                 height: 20,
               ),
+             
+              Divider(),
+              LoadingPercentage(
+                isLoading: true,
+                backgroundColor: Colors.black54,
+                overLoading: null,
+                timer: Duration(seconds: 6),
+                colorLoading: Colors.blue,
+                colorBackgroudLoading: Colors.white,
+                paintingStyle: PaintingStyle.stroke,
+                strokeJoin: StrokeJoin.round,
+                strokeCap: StrokeCap.round,
+                strokeWidth: 15.0,
+                textColor: Colors.white,
+                showProgress: true,
+                bottomLoading: null,
+                isLineLoading: true, // Set the loading state as needed
+                child: SizedBox(),
+              )
             ],
           ),
         ),
