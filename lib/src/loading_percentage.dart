@@ -45,29 +45,32 @@ class LoadingPercentage extends StatefulWidget {
 class _LoadingPercentageState extends State<LoadingPercentage>
     with TickerProviderStateMixin {
   late AnimationController _controller;
-
+  int once = 1;
   @override
   void initState() {
     _controller = AnimationController(vsync: this, duration: widget.timer);
     _controller.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
-        showDialog(
-          context: context,
-          builder: (context) => AlertDialog(
-            title: Text('Downloading Finished.'),
-            actions: [
-              TextButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                
-                setState(() {
-                  _controller.reset(); 
-                });} , 
-                child: Text('Close'),
-              ),
-            ],
-          ),
-        );
+        if (once == 1) {
+          showDialog(
+            context: context,
+            builder: (context) => AlertDialog(
+              title: Text('Downloading Finished.'),
+              actions: [
+                TextButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text('Close'),
+                ),
+              ],
+            ),
+          );
+          once = 0 ; 
+        }
+        setState(() {
+          _controller.reset();
+        });
       }
     });
     super.initState();
@@ -76,7 +79,7 @@ class _LoadingPercentageState extends State<LoadingPercentage>
   @override
   void dispose() {
     _controller.dispose();
-    super.dispose(); 
+    super.dispose();
   }
 
   @override
@@ -87,7 +90,7 @@ class _LoadingPercentageState extends State<LoadingPercentage>
         _controller.forward();
       });
     }
-    
+
     return Stack(
       children: <Widget>[
         widget.child,
