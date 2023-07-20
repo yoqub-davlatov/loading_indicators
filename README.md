@@ -82,7 +82,6 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
       Pacman
     </td>
     <td align="center">
-<<<<<<< HEAD
       <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/circle.gif" width="100px" height="100px">
       <br />
       CircleAnimation
@@ -91,11 +90,6 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
       <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/circle_loader.gif" width="100px" height="100px">
       <br />
       CircleLoaderAnimation
-=======
-      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/anushervon_main/example/screenshots/eye_moving.gif" width="125px" height="100px"> 
-      <br /> 
-      Eye-Moving 
->>>>>>> cb7552ca5811297a324483d22771fcf10e8054cd
     </td>
     <td align="center">
       <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/updown.gif" width="100px" height="33">
@@ -103,11 +97,19 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
       UpDownLoader
     </td>
   </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/anushervon_main/example/screenshots/eye_moving.gif"     
+        width="125px" height="100px"> 
+      <br /> 
+      Eye-Moving 
+    </td>
+  </tr>
 </table>
 <table>
   <tr>
     <td align="center">
-    <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/anushervon_main/example/screenshots/percentage.gif" width="700px" height="100px">
+    <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/anushervon_main/example/screenshots/percentage.gif" width="800px" height="100px">
     <br />
     Percentage indicator
   </td>
