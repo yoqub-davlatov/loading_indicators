@@ -14,7 +14,7 @@ class EyeMoving extends StatefulWidget {
   final double size;
   final double boarderSize;
   final IconType icon;
-  final Color containerColor; 
+  final Color containerColor;
   const EyeMoving({
     Key? key,
     this.colorIcon = Colors.black,
@@ -89,6 +89,12 @@ class EyeMovingState extends State<EyeMoving>
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    animationController.dispose();
+    super.dispose();
   }
 
   IconData getIcon(IconType iconType) {
