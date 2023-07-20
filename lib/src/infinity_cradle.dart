@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
-class InfiniteCradle extends StatefulWidget {
+class InfinityCradle extends StatefulWidget {
   final double size;
   final Color color;
   final Duration duration;
-  const InfiniteCradle({
+  const InfinityCradle({
     super.key,
     this.size = 30,
     this.color = Colors.black,
@@ -13,10 +13,10 @@ class InfiniteCradle extends StatefulWidget {
   });
 
   @override
-  State<InfiniteCradle> createState() => _InfiniteCradleState();
+  State<InfinityCradle> createState() => _InfinityCradleState();
 }
 
-class _InfiniteCradleState extends State<InfiniteCradle>
+class _InfinityCradleState extends State<InfinityCradle>
     with SingleTickerProviderStateMixin {
   late AnimationController animationController;
   late Animation animation;
