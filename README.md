@@ -81,6 +81,10 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
       <br />
       Pacman
     </td>
+    <td align="center"> 
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/percentage.gif" width="100px" height="100px">
+    <br />
+    Percentage indicator
   </tr>
 </table>
 
