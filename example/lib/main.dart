@@ -39,8 +39,6 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Divider(),
-              UpDownLoader(),
-              Divider(),
               InfiniteCradle(
                 size: 20,
               ),
@@ -124,6 +122,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 size: 70,
                 firstColor: Colors.cyan,
                 duration: Duration(seconds: 3),
+              ),
+              Divider(),
+              UpDownLoader(
+                duration: Duration(milliseconds: 300),
+              ),
+              Divider(),
+              UpDownLoader(
+                size: 15,
+                duration: Duration(seconds: 1),
+                firstColor: Colors.greenAccent,
+                secondColor: Colors.blueAccent,
               ),
               SizedBox(
                 height: 20,
