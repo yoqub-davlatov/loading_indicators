@@ -61,6 +61,12 @@ class _TextLoaderState extends State<TextLoader> with SingleTickerProviderStateM
   }
 
   @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Directionality(
       textDirection: TextDirection.ltr,
