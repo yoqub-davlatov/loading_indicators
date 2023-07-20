@@ -90,7 +90,7 @@ class _TextLoaderState extends State<TextLoader> with SingleTickerProviderStateM
             ),
           ),
           Text(
-            "ADING",
+            "ADDING",
             style: TextStyle(
               fontSize: widget.size,
               fontWeight: FontWeight.w900,

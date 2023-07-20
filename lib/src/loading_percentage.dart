@@ -113,14 +113,14 @@ class _LoadingPercentageState extends State<LoadingPercentage>
   List<Widget> buildLinePainter() {
     return [
       if (widget.overLoading != null) widget.overLoading!,
-      SizedBox(height: 20),
+      const SizedBox(height: 20),
       Container(
         alignment: Alignment.center,
         decoration: BoxDecoration(
           color: widget.colorBackgroudLoading,
-          borderRadius: BorderRadius.all(Radius.circular(80)),
+          borderRadius: const BorderRadius.all(Radius.circular(80)),
         ),
-        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 8.0),
+        padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 8.0),
         margin: const EdgeInsets.all(8.0),
         height: 25,
         child: AnimatedBuilder(
@@ -140,7 +140,7 @@ class _LoadingPercentageState extends State<LoadingPercentage>
           },
         ),
       ),
-      SizedBox(height: 20),
+      const SizedBox(height: 20),
       if (widget.showProgress)
         AnimatedBuilder(
           animation: _controller,
@@ -148,7 +148,7 @@ class _LoadingPercentageState extends State<LoadingPercentage>
             return _buildprogress();
           },
         ),
-      SizedBox(height: 20),
+      const SizedBox(height: 20),
       if (widget.bottomLoading != null) widget.bottomLoading!,
     ];
   }
@@ -191,7 +191,7 @@ class _LoadingPercentageState extends State<LoadingPercentage>
           ),
         ),
       ),
-      SizedBox(height: 20),
+      const SizedBox(height: 20),
       if (widget.bottomLoading != null) widget.bottomLoading!,
     ];
   }
@@ -199,7 +199,7 @@ class _LoadingPercentageState extends State<LoadingPercentage>
   Widget _buildprogress() {
     return Text(
       _controller.value < 1
-          ? (_controller.value * 100).toInt().toString() + ' %'
+          ? '${(_controller.value * 100).toInt()} %'
           : '99 %',
       style: TextStyle(color: widget.textColor, fontSize: 30),
     );

@@ -9,6 +9,7 @@ class LoadingWidget extends StatefulWidget {
   final Color color4;
 
   const LoadingWidget({
+    super.key,
     this.duration = const Duration(seconds: 1),
     this.size = 40,
     this.color1 = Colors.blue,
@@ -18,10 +19,10 @@ class LoadingWidget extends StatefulWidget {
   });
 
   @override
-  _LoadingWidgetState createState() => _LoadingWidgetState();
+  LoadingWidgetState createState() => LoadingWidgetState();
 }
 
-class _LoadingWidgetState extends State<LoadingWidget>
+class LoadingWidgetState extends State<LoadingWidget>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
@@ -59,7 +60,7 @@ class _LoadingWidgetState extends State<LoadingWidget>
       animation: _animation,
       builder: (context, child) {
         return Center(
-          child: Container(
+          child: SizedBox(
             width: boxSize,
             height: boxSize,
             child: Stack(
@@ -101,6 +102,7 @@ class BouncingBall extends StatelessWidget {
   final double size;
 
   const BouncingBall({
+    super.key,
     required this.shapeColor,
     this.xOffset = 0,
     this.yOffset = 0,

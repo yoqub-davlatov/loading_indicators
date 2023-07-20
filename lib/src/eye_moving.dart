@@ -14,7 +14,7 @@ class EyeMoving extends StatefulWidget {
   final double size;
   final double boarderSize;
   final IconType icon;
-  final Color container_color; 
+  final Color containerColor; 
   const EyeMoving({
     Key? key,
     this.colorIcon = Colors.black,
@@ -25,14 +25,14 @@ class EyeMoving extends StatefulWidget {
     this.size = 150,
     this.boarderSize = 200,
     this.icon = IconType.sun,
-    this.container_color = Colors.red,
+    this.containerColor = Colors.red,
   }) : super(key: key);
 
   @override
-  _EyeMovingState createState() => _EyeMovingState();
+  EyeMovingState createState() => EyeMovingState();
 }
 
-class _EyeMovingState extends State<EyeMoving>
+class EyeMovingState extends State<EyeMoving>
     with SingleTickerProviderStateMixin {
   late AnimationController animationController;
   late double rotationAngle;
@@ -78,7 +78,7 @@ class _EyeMovingState extends State<EyeMoving>
         width: widget.size,
         child: Container(
           decoration: BoxDecoration(
-            color: widget.container_color,
+            color: widget.containerColor,
             borderRadius: BorderRadius.circular(widget.boarderSize),
           ),
           child: Transform.rotate(
