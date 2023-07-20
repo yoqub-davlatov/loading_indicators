@@ -134,6 +134,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 firstColor: Colors.greenAccent,
                 secondColor: Colors.blueAccent,
               ),
+              Divider(),
               CircleAnimation(),
               Divider(),
               CircleAnimation(
