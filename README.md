@@ -27,7 +27,7 @@ const pacmanLoader = PacmanLoader(
   borderColor: Colors.transparent,
   eyeColor: Colors.white,
   isStatic: true,
-);  
+);
 ```
 
 ```dart
@@ -40,8 +40,8 @@ const infiniteCradle = InfiniteCradle(
 
 For more usecase info, please, refer to the `main.dart` in the example folder.
 
- 
- ## 🍰 Demo
+## 🍰 Demo
+
 <table>
   <tr>
     <td align="center">
@@ -82,6 +82,14 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
       Pacman
     </td>
   </tr>
+  <tr>
+  <td align="center">
+    <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/percentage.gif" width="100px" height="100px">
+    <br />
+    Percentage indicator
+  </td>
+</tr>
+
 </table>
 
 ## 🆘 Requests
@@ -94,11 +102,13 @@ For help getting started with Flutter, view the online
 [documentation](https://flutter.io/).
 
 For help on editing plugin code, view the [documentation](https://flutter.io/platform-plugins/#edit-code).
+
 ## 📰 License
 
 [MIT License](https://github.com/yoqub-davlatov/loading_indicators/blob/main/LICENSE).
 
 ## ✍️ Authors
+
 - Azizullo Sadriddinzoda (a.sadriddinzoda@innopolis.university)
 - Anushervon Qodirzoda (a.qodirzoda@innopolis.university)
 - Habibullo Assoev (h.assoev@innopolis.university)
