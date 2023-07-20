@@ -81,11 +81,12 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
       <br />
       Pacman
     </td>
+    <td align="center">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/anushervon_main/example/screenshots/eye_moving.gif" width="125px" height="100px"> 
+      <br /> 
+      Eye-Moving 
+    </td>
   </tr>
-  <tr>
-  
-</tr>
-
 </table>
 <table>
   <tr>
