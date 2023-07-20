@@ -97,6 +97,11 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
       Eye-Moving 
 >>>>>>> cb7552ca5811297a324483d22771fcf10e8054cd
     </td>
+    <td align="center">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/updown.gif" width="100px" height="33">
+      <br />
+      UpDownLoader
+    </td>
   </tr>
 </table>
 <table>
