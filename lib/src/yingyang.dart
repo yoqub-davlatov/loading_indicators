@@ -52,6 +52,12 @@ class _YingYangState extends State<YingYangLoader>
   }
 
   @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Transform.rotate(
       angle: _animation.value,

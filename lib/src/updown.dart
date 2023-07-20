@@ -51,6 +51,12 @@ class _UpDownState extends State<UpDownLoader>
   }
 
   @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return CustomPaint(
       painter: UpDownPainter(
