@@ -83,13 +83,18 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
     </td>
   </tr>
   <tr>
-  <td align="center">
-    <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/percentage.gif" width="50px" height="100px">
+  
+</tr>
+
+</table>
+<table>
+  <tr>
+    <td align="center">
+    <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/anushervon_main/example/screenshots/percentage.gif" width="700px" height="100px">
     <br />
     Percentage indicator
   </td>
-</tr>
-
+  </tr>
 </table>
 
 ## 🆘 Requests
