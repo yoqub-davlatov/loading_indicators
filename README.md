@@ -47,7 +47,7 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
     <td align="center">
       <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/infinite_cradle.gif" width="100px" height="100px">
       <br />
-      InfiniteCradle
+      InfinityCradle
     </td>
     <td align="center">
       <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/clock_loader.gif" width="100px" height="100px">

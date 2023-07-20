@@ -39,11 +39,11 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Divider(),
-              InfiniteCradle(
+              InfinityCradle(
                 size: 20,
               ),
               Divider(),
-              InfiniteCradle(
+              InfinityCradle(
                 size: 50,
                 color: Colors.red,
                 duration: Duration(seconds: 1),
