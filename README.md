@@ -1,6 +1,6 @@
 # 🏆 Animated Loading Indicators
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/yoqub-davlatov/loading_indicators/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/yoqub-davlatov/loading_indicators/raw/main/LICENSE)
 
 A collection of animated loading indicators that bring a delightful user experience to your applications. The collection has curated a diverse selection of loading indicators, ranging from unique designs to enhanced functionalities. Each indicator is carefully crafted to provide visual feedback during data fetching or processing, ensuring a seamless and engaging user interface. Very light and easy to use!
 
@@ -45,61 +45,61 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/infinite_cradle.gif" width="100px" height="100px">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/raw/main/example/screenshots/infinite_cradle.gif" width="100px" height="100px">
       <br />
       InfinityCradle
     </td>
     <td align="center">
-      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/clock_loader.gif" width="100px" height="100px">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/raw/main/example/screenshots/clock_loader.gif" width="100px" height="100px">
       <br />
       ClockLoader
     </td>
     <td align="center">
-      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/three_icons.gif" width="100px" height="100px">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/raw/main/example/screenshots/three_icons.gif" width="100px" height="100px">
       <br />
       ThreeIcons
     </td>
     <td align="center">
-      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/yingyang.gif" width="100px" height="100px">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/raw/main/example/screenshots/yingyang.gif" width="100px" height="100px">
       <br />
       YingYang
     </td>
     <td align="center">
-      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/text_loader.gif" width="100px" height="21px">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/raw/main/example/screenshots/text_loader.gif" width="100px" height="21px">
       <br />
       TextLoader
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/flip_icons.gif" width="100px" height="100px">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/raw/main/example/screenshots/flip_icons.gif" width="100px" height="100px">
       <br />
       FlipIcons
     </td>
     <td align="center">
-      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/pacman.gif" width="100px" height="100px">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/raw/main/example/screenshots/pacman.gif" width="100px" height="100px">
       <br />
       Pacman
     </td>
     <td align="center">
-      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/circle.gif" width="100px" height="100px">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/raw/main/example/screenshots/circle.gif" width="100px" height="100px">
       <br />
       CircleAnimation
     </td>
     <td align="center">
-      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/circle_loader.gif" width="100px" height="100px">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/raw/main/example/screenshots/circle_loader.gif" width="100px" height="100px">
       <br />
       CircleLoaderAnimation
     </td>
     <td align="center">
-      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/updown.gif" width="100px" height="33">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/raw/main/example/screenshots/updown.gif" width="100px" height="33">
       <br />
       UpDownLoader
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/anushervon_main/example/screenshots/eye_moving.gif"     
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/raw/anushervon_main/example/screenshots/eye_moving.gif"     
         width="125px" height="100px"> 
       <br /> 
       Eye-Moving 
@@ -109,7 +109,7 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
 <table>
   <tr>
     <td align="center">
-    <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/anushervon_main/example/screenshots/percentage.gif" width="800px" height="100px">
+    <img src="https://github.com/yoqub-davlatov/loading_indicators/raw/anushervon_main/example/screenshots/percentage.gif" width="800px" height="100px">
     <br />
     Percentage indicator
   </td>
@@ -129,7 +129,7 @@ For help on editing plugin code, view the [documentation](https://flutter.io/pla
 
 ## 📰 License
 
-[MIT License](https://github.com/yoqub-davlatov/loading_indicators/blob/main/LICENSE).
+[MIT License](https://github.com/yoqub-davlatov/loading_indicators/raw/main/LICENSE).
 
 ## ✍️ Authors
 
