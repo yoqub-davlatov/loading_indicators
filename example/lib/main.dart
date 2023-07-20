@@ -144,7 +144,6 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(
                 height: 20,
               ),
-             
               Divider(),
               LoadingPercentage(
                 isLoading: true,
@@ -162,10 +161,18 @@ class _MyHomePageState extends State<MyHomePage> {
                 bottomLoading: null,
                 isLineLoading: true, // Set the loading state as needed
                 child: SizedBox(),
-              ), 
-               Divider() , 
-               SizedBox(height: 20), 
-              EyeMoving(timer: Duration(seconds: 6)), 
+              ),
+              Divider(),
+              EyeMoving(timer: Duration(seconds: 6)),
+              Divider(),
+              EyeMoving(
+                timer: Duration(seconds: 1),
+                iconSize: 80,
+                size: 60,
+                icon: IconType.eye,
+                container_color: Colors.green,
+              ),
+              SizedBox(height: 20),
             ],
           ),
         ),

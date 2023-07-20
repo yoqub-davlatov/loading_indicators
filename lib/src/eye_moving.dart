@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
 
+enum IconType {
+  sun,
+  eye,
+}
+
 class EyeMoving extends StatefulWidget {
   final double rotationAngle;
   final double iconSize;
   final Duration timer;
   final Color colorIcon;
   final bool increasing;
-  final double height;
-  final double width;
-  final double boarderSize; 
-
+  final double size;
+  final double boarderSize;
+  final IconType icon;
+  final Color container_color; 
   const EyeMoving({
     Key? key,
     this.colorIcon = Colors.black,
@@ -17,9 +22,10 @@ class EyeMoving extends StatefulWidget {
     this.iconSize = 35,
     required this.timer,
     this.increasing = true,
-    this.height = 150,
-    this.width = 150,
-    this.boarderSize = 200 , 
+    this.size = 150,
+    this.boarderSize = 200,
+    this.icon = IconType.sun,
+    this.container_color = Colors.red,
   }) : super(key: key);
 
   @override
@@ -68,19 +74,29 @@ class _EyeMovingState extends State<EyeMoving>
   Widget build(BuildContext context) {
     return Center(
       child: SizedBox(
-        height: widget.height,
-        width: widget.width,
+        height: widget.size,
+        width: widget.size,
         child: Container(
           decoration: BoxDecoration(
-            color: Colors.red,
+            color: widget.container_color,
             borderRadius: BorderRadius.circular(widget.boarderSize),
           ),
           child: Transform.rotate(
             angle: rotationAngle,
-            child: Icon(Icons.sunny, size: iconSize),
+            child: Icon(getIcon(widget.icon),
+                size: iconSize >= widget.size ? widget.size : iconSize),
           ),
         ),
       ),
     );
+  }
+
+  IconData getIcon(IconType iconType) {
+    switch (iconType) {
+      case IconType.sun:
+        return Icons.sunny;
+      default:
+        return Icons.remove_red_eye;
+    }
   }
 }
