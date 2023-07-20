@@ -2,6 +2,6 @@
 
 * Initial release.
 
-## 0.0.1+1
+## 1.0.0
 
 * Finished initial collection of animated widgets
