@@ -81,8 +81,11 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
       <br />
       Pacman
     </td>
-    <td align="center">
       <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/circle_loader.gif" width="100px" height="100px">
+      <br />
+      CircleLoaderAnimation
+    <td align="center">
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/circle.gif" width="100px" height="100px">
       <br />
       CircleAnimation
     </td>

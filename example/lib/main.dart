@@ -131,6 +131,16 @@ class _MyHomePageState extends State<MyHomePage> {
                 duration: Duration(milliseconds: 25),
                 circleRadius: 100,
               ),
+              Divider(),
+              LoadingWidget(),
+              Divider(),
+              LoadingWidget(
+                size: 60,
+                color1: Colors.black,
+                color2: Colors.orange,
+                color3: Colors.purple,
+                color4: Colors.greenAccent,
+              ),
               SizedBox(
                 height: 20,
               ),
