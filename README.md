@@ -8,7 +8,7 @@ A collection of animated loading indicators that bring a delightful user experie
 
 ```yaml
 dependencies:
-  animated_loading_indicators: ^0.0.1
+  animated_loading_indicators: ^0.0.1+1
 ```
 
 ## ➕ Import
@@ -31,7 +31,7 @@ const pacmanLoader = PacmanLoader(
 ```
 
 ```dart
-const infiniteCradle = InfiniteCradle(
+const infinityCradle = InfinityCradle(
   size: 50,
   color: Colors.red,
   duration: Duration(seconds: 1),
