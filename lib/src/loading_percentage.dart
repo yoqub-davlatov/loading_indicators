@@ -11,7 +11,7 @@ class LoadingPercentage extends StatefulWidget {
     this.overLoading,
     this.timer = const Duration(seconds: 10),
     this.colorLoading = Colors.blue,
-    this.colorBackgroudLoading = Colors.white,
+    this.colorBackgroundLoading = Colors.white,
     this.paintingStyle = PaintingStyle.stroke,
     this.strokeJoin = StrokeJoin.round,
     this.strokeCap = StrokeCap.round,
@@ -30,7 +30,7 @@ class LoadingPercentage extends StatefulWidget {
   final bool isLineLoading;
   final Duration timer;
   final Color colorLoading;
-  final Color colorBackgroudLoading;
+  final Color colorBackgroundLoading;
   final PaintingStyle paintingStyle;
   final StrokeJoin strokeJoin;
   final StrokeCap strokeCap;
@@ -39,10 +39,10 @@ class LoadingPercentage extends StatefulWidget {
   final bool showProgress;
 
   @override
-  _LoadingPercentageState createState() => _LoadingPercentageState();
+  LoadingPercentageState createState() => LoadingPercentageState();
 }
 
-class _LoadingPercentageState extends State<LoadingPercentage>
+class LoadingPercentageState extends State<LoadingPercentage>
     with TickerProviderStateMixin {
   late AnimationController _controller;
   int once = 1;
@@ -55,13 +55,13 @@ class _LoadingPercentageState extends State<LoadingPercentage>
           showDialog(
             context: context,
             builder: (context) => AlertDialog(
-              title: Text('Downloading Finished.'),
+              title: const Text('Downloading Finished.'),
               actions: [
                 TextButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: Text('Close'),
+                  child: const Text('Close'),
                 ),
               ],
             ),
@@ -117,7 +117,7 @@ class _LoadingPercentageState extends State<LoadingPercentage>
       Container(
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: widget.colorBackgroudLoading,
+          color: widget.colorBackgroundLoading,
           borderRadius: const BorderRadius.all(Radius.circular(80)),
         ),
         padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 8.0),
@@ -145,7 +145,7 @@ class _LoadingPercentageState extends State<LoadingPercentage>
         AnimatedBuilder(
           animation: _controller,
           builder: (BuildContext context, Widget? child) {
-            return _buildprogress();
+            return _buildProgress();
           },
         ),
       const SizedBox(height: 20),
@@ -156,7 +156,7 @@ class _LoadingPercentageState extends State<LoadingPercentage>
   List<Widget> buildCirclePainter() {
     return [
       if (widget.overLoading != null) widget.overLoading!,
-      SizedBox(height: 20),
+      const SizedBox(height: 20),
       Container(
         alignment: Alignment.center,
         child: Center(
@@ -183,7 +183,7 @@ class _LoadingPercentageState extends State<LoadingPercentage>
                   child: AnimatedBuilder(
                     animation: _controller,
                     builder: (BuildContext context, Widget? child) {
-                      return _buildprogress();
+                      return _buildProgress();
                     },
                   ),
                 ),
@@ -196,7 +196,7 @@ class _LoadingPercentageState extends State<LoadingPercentage>
     ];
   }
 
-  Widget _buildprogress() {
+  Widget _buildProgress() {
     return Text(
       _controller.value < 1
           ? '${(_controller.value * 100).toInt()} %'
