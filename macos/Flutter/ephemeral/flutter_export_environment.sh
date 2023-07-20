@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=C:\Users\yoqub\OneDrive\Documents\FlutterDev\flutter"
-export "FLUTTER_APPLICATION_PATH=C:\Users\yoqub\OneDrive\Documents\FlutterDev\Projects\my_plugin\loading_indicators"
+export "FLUTTER_ROOT=C:\Users\habib\Documents\FlutterDev\flutter"
+export "FLUTTER_APPLICATION_PATH=C:\Users\habib\Desktop\package\loading_indicators"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_BUILD_DIR=build"
 export "FLUTTER_BUILD_NAME=0.0.1"
