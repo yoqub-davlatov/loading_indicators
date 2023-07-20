@@ -225,7 +225,7 @@ class LinePainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    final Paint _paint = Paint()
+    final Paint paint = Paint()
       ..color = color
       ..strokeWidth = strokeWidth
       ..style = paintingStyle
@@ -241,7 +241,7 @@ class LinePainter extends CustomPainter {
     Path extractPath =
         pathMetric.extractPath(0.0, pathMetric.length * progress / 2);
 
-    canvas.drawPath(extractPath, _paint);
+    canvas.drawPath(extractPath, paint);
   }
 
   @override
@@ -269,7 +269,7 @@ class CirclesPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    final Paint _paint = Paint()
+    final Paint paint = Paint()
       ..color = color
       ..strokeWidth = strokeWidth
       ..style = paintingStyle
@@ -284,7 +284,7 @@ class CirclesPainter extends CustomPainter {
     Path extractPath =
         pathMetric.extractPath(0.0, pathMetric.length * progress);
 
-    canvas.drawPath(extractPath, _paint);
+    canvas.drawPath(extractPath, paint);
   }
 
   @override

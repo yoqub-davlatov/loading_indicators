@@ -45,33 +45,40 @@ class _CircleAnimationState extends State<CircleAnimation> {
   @override
   Widget build(BuildContext context) {
     return Center(
-        child: Container(
-          width: (widget.size + widget.circleRadius) * 2,
-          height: (widget.size + widget.circleRadius) * 2,
-          child: Directionality(
-            textDirection: TextDirection.ltr,
-            child: Stack(
-              children: List.generate(widget.numberOfCircles, (index) {
-                // Calculate the angle for the current circle
-                double currentAngle = (2 * pi / widget.numberOfCircles) * index + angle;
+      child: SizedBox(
+        width: (widget.size + widget.circleRadius) * 2,
+        height: (widget.size + widget.circleRadius) * 2,
+        child: Directionality(
+          textDirection: TextDirection.ltr,
+          child: Stack(
+            children: List.generate(widget.numberOfCircles, (index) {
+              // Calculate the angle for the current circle
+              double currentAngle =
+                  (2 * pi / widget.numberOfCircles) * index + angle;
 
-                // Calculate the position of the circle along the imaginary circle
-                double x = widget.circleRadius * cos(currentAngle) + (widget.size + widget.circleRadius) * 3 / 2;
-                double y = widget.circleRadius * sin(currentAngle) + (widget.size + widget.circleRadius) * 3 / 2;
+              // Calculate the position of the circle along the imaginary circle
+              double x = widget.circleRadius * cos(currentAngle) +
+                  (widget.size + widget.circleRadius) * 3 / 2;
+              double y = widget.circleRadius * sin(currentAngle) +
+                  (widget.size + widget.circleRadius) * 3 / 2;
 
-                // Calculate the intensity of green for the current circle
-                double greenIntensity = index / widget.numberOfCircles;
+              // Calculate the intensity of green for the current circle
+              double greenIntensity = index / widget.numberOfCircles;
 
-                return Positioned(
-                  left: x - widget.circleRadius,
-                  top: y - widget.circleRadius,
-                  child: GreenCircle(greenIntensity: greenIntensity, size: widget.size, color: widget.color,),
-                );
-              }),
-            ),
+              return Positioned(
+                left: x - widget.circleRadius,
+                top: y - widget.circleRadius,
+                child: GreenCircle(
+                  greenIntensity: greenIntensity,
+                  size: widget.size,
+                  color: widget.color,
+                ),
+              );
+            }),
           ),
         ),
-      );
+      ),
+    );
   }
 }
 
@@ -80,7 +87,12 @@ class GreenCircle extends StatelessWidget {
   final double size;
   final Color color;
 
-  GreenCircle({required this.greenIntensity, required this.size, required this.color});
+  const GreenCircle({
+    super.key,
+    required this.greenIntensity,
+    required this.size,
+    required this.color,
+  });
 
   @override
   Widget build(BuildContext context) {
