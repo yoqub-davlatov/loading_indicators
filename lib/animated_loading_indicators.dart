@@ -10,4 +10,5 @@ export 'package:animated_loading_indicators/src/yingyang.dart';
 export 'package:animated_loading_indicators/src/updown.dart';
 export 'package:animated_loading_indicators/src/circle_loader.dart';
 export 'package:animated_loading_indicators/src/circles.dart';
-
+export 'package:animated_loading_indicators/src/loading_percentage.dart';
+export 'package:animated_loading_indicators/src/eye_moving.dart';

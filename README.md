@@ -27,7 +27,7 @@ const pacmanLoader = PacmanLoader(
   borderColor: Colors.transparent,
   eyeColor: Colors.white,
   isStatic: true,
-);  
+);
 ```
 
 ```dart
@@ -40,8 +40,8 @@ const infiniteCradle = InfiniteCradle(
 
 For more usecase info, please, refer to the `main.dart` in the example folder.
 
- 
- ## 🍰 Demo
+## 🍰 Demo
+
 <table>
   <tr>
     <td align="center">
@@ -82,6 +82,7 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
       Pacman
     </td>
     <td align="center">
+<<<<<<< HEAD
       <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/circle.gif" width="100px" height="100px">
       <br />
       CircleAnimation
@@ -90,12 +91,26 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
       <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/circle_loader.gif" width="100px" height="100px">
       <br />
       CircleLoaderAnimation
+=======
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/anushervon_main/example/screenshots/eye_moving.gif" width="125px" height="100px"> 
+      <br /> 
+      Eye-Moving 
+>>>>>>> cb7552ca5811297a324483d22771fcf10e8054cd
     </td>
     <td align="center">
       <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/main/example/screenshots/updown.gif" width="100px" height="33">
       <br />
       UpDownLoader
     </td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td align="center">
+    <img src="https://github.com/yoqub-davlatov/loading_indicators/blob/anushervon_main/example/screenshots/percentage.gif" width="700px" height="100px">
+    <br />
+    Percentage indicator
+  </td>
   </tr>
 </table>
 
@@ -109,11 +124,13 @@ For help getting started with Flutter, view the online
 [documentation](https://flutter.io/).
 
 For help on editing plugin code, view the [documentation](https://flutter.io/platform-plugins/#edit-code).
+
 ## 📰 License
 
 [MIT License](https://github.com/yoqub-davlatov/loading_indicators/blob/main/LICENSE).
 
 ## ✍️ Authors
+
 - Azizullo Sadriddinzoda (a.sadriddinzoda@innopolis.university)
 - Anushervon Qodirzoda (a.qodirzoda@innopolis.university)
 - Habibullo Assoev (h.assoev@innopolis.university)
