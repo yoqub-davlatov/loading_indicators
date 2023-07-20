@@ -1,6 +1,6 @@
 name: animated_loading_indicators
 description: A collection of animated loading indicators that bring a delightful user experience to your applications. The collection has curated a diverse selection of loading indicators, ranging from unique designs to enhanced functionalities. Each indicator is carefully crafted to provide visual feedback during data fetching or processing, ensuring a seamless and engaging user interface. Very light and easy to use!
-version: 1.0.0
+version: 1.0.0+1
 homepage: https://github.com/yoqub-davlatov/loading_indicators.git
 
 environment:

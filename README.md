@@ -8,7 +8,7 @@ A collection of animated loading indicators that bring a delightful user experie
 
 ```yaml
 dependencies:
-  animated_loading_indicators: ^1.0.0
+  animated_loading_indicators: ^1.0.0+1
 ```
 
 ## ➕ Import
