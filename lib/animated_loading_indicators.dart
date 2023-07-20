@@ -7,3 +7,4 @@ export 'package:animated_loading_indicators/src/infinite_cradle.dart';
 export 'package:animated_loading_indicators/src/pacman.dart';
 export 'package:animated_loading_indicators/src/text_loader.dart';
 export 'package:animated_loading_indicators/src/yingyang.dart';
+export 'package:animated_loading_indicators/src/updown.dart';

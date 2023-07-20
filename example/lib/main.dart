@@ -38,6 +38,9 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              Divider(),
+              UpDownLoader(),
+              Divider(),
               InfiniteCradle(
                 size: 20,
               ),
