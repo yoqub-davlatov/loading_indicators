@@ -1,6 +1,6 @@
 name: animated_loading_indicators
 description: A collection of light-weighted animated loading indicators that has curated a diverse selection of loading indicators, ranging from unique designs to enhanced functionalities.
-version: 1.0.0+2
+version: 1.0.0+3
 homepage: https://github.com/yoqub-davlatov/loading_indicators.git
 
 environment:

@@ -43,7 +43,7 @@ class _CircleAnimationState extends State<CircleAnimation> {
   Widget build(BuildContext context) {
     double containerSize = widget.circleRadius * 4 + (widget.size * 3);
     return Center(
-      child: Container(
+      child: SizedBox(
         width: containerSize,
         height: containerSize,
         child: Directionality(

@@ -11,3 +11,6 @@
 ## 1.0.0+2
 
 * Fixed minor bugs
+## 1.0.0+3
+
+* Updated README.md and fixed minor bugs
