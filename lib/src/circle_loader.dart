@@ -6,7 +6,6 @@ import 'dart:math';
 class CircleAnimation extends StatefulWidget {
   final int numberOfCircles;
   final double circleRadius;
-  final double containerSize;
   final double size;
   final Color color;
   final Duration duration;
@@ -14,7 +13,6 @@ class CircleAnimation extends StatefulWidget {
     super.key,
     this.numberOfCircles = 10,
     this.circleRadius = 30,
-    this.containerSize = 150,
     this.color = Colors.teal,
     this.size = 15,
     this.duration = const Duration(milliseconds: 10),
@@ -25,7 +23,6 @@ class CircleAnimation extends StatefulWidget {
 
 class _CircleAnimationState extends State<CircleAnimation> {
   double angle = 0.0;
-
   @override
   void initState() {
     super.initState();
@@ -44,10 +41,11 @@ class _CircleAnimationState extends State<CircleAnimation> {
 
   @override
   Widget build(BuildContext context) {
+    double containerSize = widget.circleRadius * 4 + (widget.size * 3);
     return Center(
-      child: SizedBox(
-        width: (widget.size + widget.circleRadius) * 2,
-        height: (widget.size + widget.circleRadius) * 2,
+      child: Container(
+        width: containerSize,
+        height: containerSize,
         child: Directionality(
           textDirection: TextDirection.ltr,
           child: Stack(
@@ -57,10 +55,10 @@ class _CircleAnimationState extends State<CircleAnimation> {
                   (2 * pi / widget.numberOfCircles) * index + angle;
 
               // Calculate the position of the circle along the imaginary circle
-              double x = widget.circleRadius * cos(currentAngle) +
-                  (widget.size + widget.circleRadius) * 3 / 2;
-              double y = widget.circleRadius * sin(currentAngle) +
-                  (widget.size + widget.circleRadius) * 3 / 2;
+              double x =
+                  widget.circleRadius * cos(currentAngle) + containerSize / 2;
+              double y =
+                  widget.circleRadius * sin(currentAngle) + containerSize / 2;
 
               // Calculate the intensity of green for the current circle
               double greenIntensity = index / widget.numberOfCircles;
