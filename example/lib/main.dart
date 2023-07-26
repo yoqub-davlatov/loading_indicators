@@ -135,15 +135,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 secondColor: Colors.blueAccent,
               ),
               Divider(),
-              CircleAnimation(),
-              Divider(),
-              CircleAnimation(
-                size: 45,
-                color: Colors.black,
-                duration: Duration(milliseconds: 25),
-                circleRadius: 100,
-              ),
-              Divider(),
               LoadingWidget(),
               Divider(),
               LoadingWidget(
@@ -153,9 +144,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 color3: Colors.purple,
                 color4: Colors.greenAccent,
               ),
-              SizedBox(
-                height: 20,
-              ),
+              Divider(),
+              CircleAnimation(),
               Divider(),
               LoadingPercentage(
                 isLoading: true,

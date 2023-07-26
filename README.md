@@ -4,42 +4,6 @@
 
 A collection of animated loading indicators that bring a delightful user experience to your applications. The collection has curated a diverse selection of loading indicators, ranging from unique designs to enhanced functionalities. Each indicator is carefully crafted to provide visual feedback during data fetching or processing, ensuring a seamless and engaging user interface. Very light and easy to use!
 
-## ✔️ Installing
-
-```yaml
-dependencies:
-  animated_loading_indicators: ^1.0.0+2
-```
-
-## ➕ Import
-
-```dart
-import 'package:animated_loading_indicators/animated_loading_indicators.dart';
-```
-
-## 💻 How To Use
-
-```dart
-const pacmanLoader = PacmanLoader(
-  size: 40,
-  duration: Duration(milliseconds: 450),
-  mainColor: Colors.red,
-  borderColor: Colors.transparent,
-  eyeColor: Colors.white,
-  isStatic: true,
-);
-```
-
-```dart
-const infinityCradle = InfinityCradle(
-  size: 50,
-  color: Colors.red,
-  duration: Duration(seconds: 1),
-);
-```
-
-For more usecase info, please, refer to the `main.dart` in the example folder.
-
 ## 🍰 Demo
 
 <table>
@@ -115,6 +79,36 @@ For more usecase info, please, refer to the `main.dart` in the example folder.
   </td>
   </tr>
 </table>
+
+
+## ➕ Import
+
+```dart
+import 'package:animated_loading_indicators/animated_loading_indicators.dart';
+```
+
+## 💻 How To Use
+
+```dart
+const pacmanLoader = PacmanLoader(
+  size: 40,
+  duration: Duration(milliseconds: 450),
+  mainColor: Colors.red,
+  borderColor: Colors.transparent,
+  eyeColor: Colors.white,
+  isStatic: true,
+);
+```
+
+```dart
+const infinityCradle = InfinityCradle(
+  size: 50,
+  color: Colors.red,
+  duration: Duration(seconds: 1),
+);
+```
+
+For more usecase info, please, refer to the `main.dart` in the example folder.
 
 ## 🆘 Requests
 
