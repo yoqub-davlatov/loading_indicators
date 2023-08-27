@@ -63,7 +63,7 @@ A collection of animated loading indicators that bring a delightful user experie
   </tr>
   <tr>
     <td align="center">
-      <img src="https://github.com/yoqub-davlatov/loading_indicators/raw/anushervon_main/example/screenshots/eye_moving.gif"     
+      <img src="https://github.com/yoqub-davlatov/loading_indicators/raw/main/example/screenshots/eye_moving.gif"     
         width="125px" height="100px"> 
       <br /> 
       Eye-Moving 
@@ -73,7 +73,7 @@ A collection of animated loading indicators that bring a delightful user experie
 <table>
   <tr>
     <td align="center">
-    <img src="https://github.com/yoqub-davlatov/loading_indicators/raw/anushervon_main/example/screenshots/percentage.gif" width="800px" height="100px">
+    <img src="https://github.com/yoqub-davlatov/loading_indicators/raw/main/example/screenshots/percentage.gif" width="800px" height="100px">
     <br />
     Percentage indicator
   </td>
